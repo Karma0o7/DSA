@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int pressed[4][4];
 int toggled[4][4];
 
@@ -13,7 +12,6 @@ int main()
             toggled[i][j] = pressed[i][j];
         }
     }
-
     for (int i = 1; i <= 3; i++){
         for (int j = 1; j <= 3; j++){
             if (pressed[i][j] != 0){
@@ -24,7 +22,6 @@ int main()
             }
         }
     }
-
     for (int i = 1; i <= 3; i++){
         for (int j = 1; j <= 3; j++){
             if (toggled[i][j] % 2)
@@ -34,6 +31,5 @@ int main()
         }
         cout << endl;
     }
-
     return 0;
 }
